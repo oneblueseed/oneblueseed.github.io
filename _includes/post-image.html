@@ -1,0 +1,12 @@
+<figure class="post-figure">
+    <img src="{{ include.url | relative_url }}" alt="{{ include.alt }}">
+    {% if include.caption %}
+        <figcaption class="post-caption">{{ include.caption }}</figcaption>
+    {% endif %}
+</figure>
+
+<style>
+    .post-figure { margin: 30px 0; text-align: center; }
+    .post-figure img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    .post-caption { font-style: italic; color: #666; font-size: 0.85rem; margin-top: 8px; letter-spacing: 0.5px; }
+</style>
